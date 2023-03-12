@@ -1,2 +1,2 @@
 # AWS CloudFormation S3 CloudFront ACM Route53
-AWS CloudFormation stack for hosting static content with S3, CloudFront, and Route53. S3 bucket access limited by Origin Access Control (OAC). CloudFront SSL (TLS1.2-2021) provided by ACM.
+Deploy a private S3 bucket for hosting static content. S3 Bucket is accessed via CloudFront. S3 origin access is limited via Origin Access Control. DNS record for CloudFront distribution is added to an existing zone in Route53. CloudFront uses an existing ACM certificate to secure HTTPS SSL (TLS1.2-2021) traffic. All HTTP traffic is upgraded to HTTPS.
